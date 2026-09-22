@@ -1,0 +1,61 @@
+Created from template: |append [ot_log-%y-%m-%d_%H_%M_%s.log] 
+Number of records: 100000
+Lifetime: unlimited
+Log format:
+date time severity {session id} <category> [source]
+label: message
+===================================================
+
+2026-Sep-22 11:56:31.892 ALW {N/A} <N/A> [OptimComponents Core]
+========== Log start ==========
+
+2026-Sep-22 11:56:31.892 INFO {N/A} <N/A> [OptimComponents Core]
+Created session with ID 'vxmlDialog_0'.
+
+2026-Sep-22 11:56:31.943 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Preparing document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/gestion_agenda_v0.vxml'.
+
+2026-Sep-22 11:56:31.961 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Preparing of document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/gestion_agenda_v0.vxml' completed.
+  result = success
+
+2026-Sep-22 11:56:31.963 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/gestion_agenda_v0.vxml'
+
+2026-Sep-22 11:56:31.966 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <form> with id 'agenda'; line 23; column 1.
+
+2026-Sep-22 11:56:31.966 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <block>; line 40; column 1.
+
+2026-Sep-22 11:56:31.966 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <field> with name 'num_abonne'; line 48; column 1.
+
+2026-Sep-22 11:56:31.986 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2026-Sep-22 11:56:50.848 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User has been disconnected.
+
+2026-Sep-22 11:56:50.848 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+An event 'connection.disconnect.hangup' was added to the event queue
+
+2026-Sep-22 11:56:50.848 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2026-Sep-22 11:56:50.848 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Processing event 'connection.disconnect.hangup'.
+  Event origin = document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/gestion_agenda_v0.vxml'
+  Handler location = platform default handler
+
+2026-Sep-22 11:56:50.848 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpretation finished.
+  value returned by <exit> = 
+{
+}
+  value returned by <disconnect> = 
+undefined
+
+2026-Sep-22 11:56:50.891 INFO {N/A} <N/A> [OptimComponents Core]
+Deleted session with ID 'vxmlDialog_0'.
+

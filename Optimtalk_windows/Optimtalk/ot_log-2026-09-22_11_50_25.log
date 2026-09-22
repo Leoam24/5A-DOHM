@@ -1,0 +1,33 @@
+Created from template: |append [ot_log-%y-%m-%d_%H_%M_%s.log] 
+Number of records: 100000
+Lifetime: unlimited
+Log format:
+date time severity {session id} <category> [source]
+label: message
+===================================================
+
+2026-Sep-22 11:50:25.148 ALW {N/A} <N/A> [OptimComponents Core]
+========== Log start ==========
+
+2026-Sep-22 11:50:25.148 INFO {N/A} <N/A> [OptimComponents Core]
+Created session with ID 'vxmlDialog_0'.
+
+2026-Sep-22 11:50:25.256 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Preparing document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/grammaire_dates_v3.grxml'.
+
+2026-Sep-22 11:50:25.258 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+An event 'error.badfetch' was added to the event queue
+
+2026-Sep-22 11:50:25.258 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Preparing of document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/grammaire_dates_v3.grxml' completed.
+  result = failure
+
+2026-Sep-22 11:50:25.258 ERR  {vxmlDialog_0} <interpretation error> [VoiceXML interpreter]
+The following error occurred during the interpretation: A VoiceXML event 'error.badfetch' was generated during preparing of a VoiceXML document. The following message was associated with the event: Cannot load document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/grammaire_dates_v3.grxml' since an error occurred in call to VoiceXML Document Processor. VoiceXML Document Processor reports: line 4, column 1; Invalid VoiceXML document structure, root node of a VoiceXML document must be tag <vxml>.
+
+2026-Sep-22 11:50:25.258 WARN {vxmlDialog_0} <Alarm> [VoiceXML interpreter]
+optimtalk.interpretationError: The following error occurred during the interpretation: A VoiceXML event 'error.badfetch' was generated during preparing of a VoiceXML document. The following message was associated with the event: Cannot load document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/grammaire_dates_v3.grxml' since an error occurred in call to VoiceXML Document Processor. VoiceXML Document Processor reports: line 4, column 1; Invalid VoiceXML document structure, root node of a VoiceXML document must be tag <vxml>.
+
+2026-Sep-22 11:50:25.367 INFO {N/A} <N/A> [OptimComponents Core]
+Deleted session with ID 'vxmlDialog_0'.
+
