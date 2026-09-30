@@ -1,0 +1,100 @@
+Created from template: |append [ot_log-%y-%m-%d_%H_%M_%s.log] 
+Number of records: 100000
+Lifetime: unlimited
+Log format:
+date time severity {session id} <category> [source]
+label: message
+===================================================
+
+2026-Sep-30 17:34:27.303 ALW {N/A} <N/A> [OptimComponents Core]
+========== Log start ==========
+
+2026-Sep-30 17:34:27.303 INFO {N/A} <N/A> [OptimComponents Core]
+Created session with ID 'vxmlDialog_0'.
+
+2026-Sep-30 17:34:27.369 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Preparing document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/gestion_agenda_v1.vxml'.
+
+2026-Sep-30 17:34:27.375 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Preparing of document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/gestion_agenda_v1.vxml' completed.
+  result = success
+
+2026-Sep-30 17:34:27.377 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/gestion_agenda_v1.vxml'
+
+2026-Sep-30 17:34:27.380 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <form> with id 'agenda'; line 23; column 1.
+
+2026-Sep-30 17:34:27.380 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <block>; line 40; column 1.
+
+2026-Sep-30 17:34:27.384 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <field> with name 'num_abonne'; line 48; column 1.
+
+2026-Sep-30 17:34:27.401 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2026-Sep-30 17:34:30.033 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2026-Sep-30 17:34:30.033 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+The following input was collected:
+  utterance = un
+  confidence = 1
+  mode = voice
+
+2026-Sep-30 17:34:30.033 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 61; column 5.
+
+2026-Sep-30 17:34:30.033 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <field> with name 'confirm'; line 79; column 3.
+
+2026-Sep-30 17:34:30.033 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2026-Sep-30 17:34:33.032 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2026-Sep-30 17:34:33.033 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+The following input was collected:
+  utterance = oui
+  confidence = 1
+  mode = voice
+
+2026-Sep-30 17:34:33.033 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 94; column 10.
+
+2026-Sep-30 17:34:33.035 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <block>; line 110; column 1.
+
+2026-Sep-30 17:34:33.035 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <field> with name 'res_date'; line 118; column 1.
+
+2026-Sep-30 17:34:33.035 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+An event 'error.badfetch' was added to the event queue
+
+2026-Sep-30 17:34:33.035 ERR  {vxmlDialog_0} <System message> [VoiceXML interpreter]
+An unhandled error event 'error.badfetch' occurred (It will be processed by a default platform error handler). The following message was associated with the event: document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/gestion_agenda_v1.vxml', line 122; Cannot load grammar 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/grammaire_date_v3.grxml' since an error occurred in call to Resource Loader. Resource Loader reports: Cannot open stream. since an error occurred in call to file stream. file stream reports: Cannot open file "C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/grammaire_date_v3.grxml".
+
+2026-Sep-30 17:34:33.050 WARN {vxmlDialog_0} <Alarm> [VoiceXML interpreter]
+optimtalk.interpretationError: An unhandled error event 'error.badfetch' occurred (It will be processed by a default platform error handler). The following message was associated with the event: document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/gestion_agenda_v1.vxml', line 122; Cannot load grammar 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/grammaire_date_v3.grxml' since an error occurred in call to Resource Loader. Resource Loader reports: Cannot open stream. since an error occurred in call to file stream. file stream reports: Cannot open file "C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/grammaire_date_v3.grxml".
+
+2026-Sep-30 17:34:33.050 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Processing event 'error.badfetch'.
+  Event origin = document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/gestion_agenda_v1.vxml'; line 122
+  Handler location = platform default handler
+
+2026-Sep-30 17:34:33.050 ERR  {vxmlDialog_0} <user's application> [VoiceXML interpreter]
+Unhandled error event 'error.badfetch' occurred. Associated message: document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/gestion_agenda_v1.vxml', line 122; Cannot load grammar 'file:/C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/grammaire_date_v3.grxml' since an error occurred in call to Resource Loader. Resource Loader reports: Cannot open stream. since an error occurred in call to file stream. file stream reports: Cannot open file "C:/Users/hml4654a/Documents/5A-DOHM/AGENDA_V0/AGENDA_V0/grammaire_date_v3.grxml".
+
+2026-Sep-30 17:34:33.050 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpretation finished.
+  value returned by <exit> = 
+{
+}
+  value returned by <disconnect> = 
+undefined
+
+2026-Sep-30 17:34:33.142 INFO {N/A} <N/A> [OptimComponents Core]
+Deleted session with ID 'vxmlDialog_0'.
+
