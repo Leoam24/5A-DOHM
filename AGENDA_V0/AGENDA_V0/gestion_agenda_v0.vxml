@@ -53,18 +53,25 @@
 	 <grammar src="grammaire_num_ab_v2.grxml" type="application/srgs+xml"/>
 
          <!-- Gestion des erreurs -->
-         <help> Donner un nombre compris entre 1 et 999 999 </help>
+         <help> Donner un nombre compris entre 1 et 2500 </help>
          <noinput> Je n'ai pas entendu. Pouvez-vous me preciser votre numero d'abonne ? </noinput>
 	 <nomatch> Je n'ai pas compris. Pouvez-vous me donner votre numero d'abonne S.V.P ? </nomatch>
 
          <!-- Comportement du systeme une fois ce champ rempli -->
-	 <filled>
-	         Votre numero d'abonne est le <value expr="num_abonne.text" /> 
-                 <if cond="mode_trace=='True'">
-                   TRACE VALEUR  <value expr="num_abonne.nb" />
-                 </if>
-         </filled>
-  </field>
+    <filled>
+        <!-- Vérification de l'intervalle [1, 2500] -->
+        <if cond="num_abonne.nb >= 1 &amp;&amp; num_abonne.nb &lt;= 2500">
+             Votre numero d'abonne est le <value expr="num_abonne.nb" /> 
+             <if cond="mode_trace=='True'">
+                TRACE VALEUR  <value expr="num_abonne.nb" />
+             </if>
+        <else/>
+             <!-- si hors intervalle: message d erreur et reinitialisation du champ -->
+             <prompt> Le numero doit etre compris entre 1 et 2500. Recommencons. </prompt>
+             <clear namelist="num_abonne.nb"/>
+        </if>
+   </filled>
+ </field>
 
 <!-- Champ/Slot de confirmation  -->
   <field name="confirm">
