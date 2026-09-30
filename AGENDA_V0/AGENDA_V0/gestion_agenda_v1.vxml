@@ -119,7 +119,7 @@
      <!-- Date reservation -->
 	 <prompt> Pour quand vous faut il la salle ? </prompt>    
           <!-- Appel a une grammaire externe pour la gestion de la date -->
-	     <grammar src="grammaire_date_v3.grxml" type="application/srgs+xml"/>
+	     <grammar src="grammaire_dates_v3.grxml" type="application/srgs+xml"/>
 
           <!-- Gestion des erreurs -->
          <help> Donner une une date valide </help>
