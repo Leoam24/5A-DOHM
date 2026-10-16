@@ -1,41 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grammar version="1.0" 
-         xml:lang="fr-FR" 
-         root="horaire">
+<!-- fichier grammaire_horraire.grxml -->
+<!-- reconnaitre une horaire, lui attribuer une valeur numerique et le retranscrire -->
 
-    <!-- RÈGLE PRINCIPALE (root) -->
+<grammar version="1.0" root="horaire" xml:lang="fr">
+
+<meta name="description" content="grammaire horaire"/>
+<meta name="author" content="Leo AHMED MUSHTAQ"/>
+<meta name="copyright" content="free for any purpose"/>
+
+    <!-- REGLE PRINCIPALE (root) -->
     <rule id="horaire" scope="public">
-        <item>
-            <!-- 1. Déclaration/Initialisation de l'objet de sortie -->
-            <tag>
-                out.H = 0;
-                out.MN = 0;
-                out.NTOT_MIN = 0;
-                out.text = "";
-            </tag>
-
-            <!-- 2. Capture des expressions orales (exemples / sous-règles) -->
-            <one-of>
-                <item>
-                    <!-- Insérer ici tes expressions orales -->
-                    <tag>
-                        out.H = 0;
-                        out.MN = 0;
-                        out.NTOT_MIN = (out.H * 60) + out.MN;
-                        out.text = "exemple";
-                    </tag>
-                </item>
-            </one-of>
-        </item>
-    </rule>
-
-    <!-- SOUS-RÈGLES AUXILIAIRES (Exemple pour réutiliser des règles comme les nombres) -->
-    <!--
-    <rule id="sous_regle">
         <one-of>
-            <item> ... </item>
+            <!-- Exemple : "midi et quart" -->
+            <item>
+                <ruleref uri="#Heures"/>
+                <ruleref uri="#Minutes"/>
+                <tag>
+                    out.H = rules.Heures.H;
+                    out.MN = rules.Minutes.MN;
+                    out.NTOT_MIN = (out.H * 60) + out.MN;
+                    out.text = rules.Heures.text + " " + rules.Minutes.text;
+                </tag>
+            </item>
+
+            <!-- Exemple : "midi" seul -->
+            <item>
+                <ruleref uri="#Heures"/>
+                <tag>
+                    out.H = rules.Heures.H;
+                    out.MN = 0;
+                    out.NTOT_MIN = out.H * 60;
+                    out.text = rules.Heures.text;
+                </tag>
+            </item>
         </one-of>
     </rule>
-    -->
+
+    <!-- SOUS-REGLES EN DEHORS DE LA REGLE PRINCIPALE -->
+
+    <rule id="Heures">
+        <one-of>
+            <item> midi <tag> out.H = 12; </tag> </item>
+            <item> minuit <tag> out.H = 0; </tag> </item>
+        </one-of>
+        <tag> out.text = meta.current().text; </tag>
+    </rule>
+
+    <rule id="Minutes">
+        <one-of>
+            <item> et quart <tag> out.MN = 15; </tag> </item>
+            <item> moins le quart <tag> out.MN = 45; </tag> </item>
+            <item> et demie <tag> out.MN = 30; </tag> </item>
+        </one-of>
+        <tag> out.text = meta.current().text; </tag>
+    </rule>
+
+    <rule id="Periode">
+        <one-of>
+            <item> du matin <tag> out.offset = 0; </tag> </item>
+            <item> de l'apres midi <tag> out.offset = 12; </tag> </item>
+            <item> du soir <tag> out.offset = 12; </tag> </item>
+        </one-of>
+        <tag> out.text = meta.current().text; </tag>
+    </rule>
 
 </grammar>
