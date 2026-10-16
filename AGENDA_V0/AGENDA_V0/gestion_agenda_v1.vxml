@@ -18,6 +18,22 @@
 <grammar src="grammaire_aide.grxml" type="application/srgs+xml" />
 </link>
 
+<catch event="exit">
+     <prompt> Exit! </prompt>
+     <exit/>
+</catch>
+
+<link event="exit">
+     <grammar root="main">
+          <rule id="main" scope="public">
+               <one-of>
+                    <item> exit </item>
+                    <item> quit </item>
+               </one-of>
+          </rule>
+     </grammar>
+</link>
+
 <!-- dialogue de demande d'information -->
 
 <form id="agenda">

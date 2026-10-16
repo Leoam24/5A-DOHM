@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar version="1.0" 
+         xml:lang="fr-FR" 
+         root="horaire">
+
+    <!-- RÈGLE PRINCIPALE (root) -->
+    <rule id="horaire" scope="public">
+        <item>
+            <!-- 1. Déclaration/Initialisation de l'objet de sortie -->
+            <tag>
+                out.H = 0;
+                out.MN = 0;
+                out.NTOT_MIN = 0;
+                out.text = "";
+            </tag>
+
+            <!-- 2. Capture des expressions orales (exemples / sous-règles) -->
+            <one-of>
+                <item>
+                    <!-- Insérer ici tes expressions orales -->
+                    <tag>
+                        out.H = 0;
+                        out.MN = 0;
+                        out.NTOT_MIN = (out.H * 60) + out.MN;
+                        out.text = "exemple";
+                    </tag>
+                </item>
+            </one-of>
+        </item>
+    </rule>
+
+    <!-- SOUS-RÈGLES AUXILIAIRES (Exemple pour réutiliser des règles comme les nombres) -->
+    <!--
+    <rule id="sous_regle">
+        <one-of>
+            <item> ... </item>
+        </one-of>
+    </rule>
+    -->
+
+</grammar>
