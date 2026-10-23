@@ -1,0 +1,92 @@
+Created from template: |append [ot_log-%y-%m-%d_%H_%M_%s.log] 
+Number of records: 100000
+Lifetime: unlimited
+Log format:
+date time severity {session id} <category> [source]
+label: message
+===================================================
+
+2026-Oct-23 14:59:38.114 ALW {N/A} <N/A> [OptimComponents Core]
+========== Log start ==========
+
+2026-Oct-23 14:59:38.114 INFO {N/A} <N/A> [OptimComponents Core]
+Created session with ID 'vxmlDialog_0'.
+
+2026-Oct-23 14:59:38.177 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Preparing document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/examples/examples/example_pizza/pizza.vxml'.
+
+2026-Oct-23 14:59:38.193 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Preparing of document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/examples/examples/example_pizza/pizza.vxml' completed.
+  result = success
+
+2026-Oct-23 14:59:38.193 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/examples/examples/example_pizza/pizza.vxml'
+
+2026-Oct-23 14:59:38.193 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <form> with id 'start'; line 20; column 1.
+
+2026-Oct-23 14:59:38.199 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <initial> with name 'mixed'; line 42; column 3.
+
+2026-Oct-23 14:59:38.209 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2026-Oct-23 14:59:46.220 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+An event 'noinput' was added to the event queue
+
+2026-Oct-23 14:59:46.220 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2026-Oct-23 14:59:46.220 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Processing event 'noinput'.
+  Event origin = document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/examples/examples/example_pizza/pizza.vxml'; line 42
+  Handler location = platform default handler
+
+2026-Oct-23 14:59:46.220 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <initial> with name 'mixed'; line 42; column 3.
+
+2026-Oct-23 14:59:46.220 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2026-Oct-23 15:00:17.987 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+An event 'maxspeechtimeout' was added to the event queue
+
+2026-Oct-23 15:00:17.987 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2026-Oct-23 15:00:17.987 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Processing event 'maxspeechtimeout'.
+  Event origin = document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/examples/examples/example_pizza/pizza.vxml'; line 42
+  Handler location = platform default handler
+
+2026-Oct-23 15:00:17.987 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <initial> with name 'mixed'; line 42; column 3.
+
+2026-Oct-23 15:00:17.987 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2026-Oct-23 15:00:21.084 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User has been disconnected.
+
+2026-Oct-23 15:00:21.084 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+An event 'connection.disconnect.hangup' was added to the event queue
+
+2026-Oct-23 15:00:21.084 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2026-Oct-23 15:00:21.084 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Processing event 'connection.disconnect.hangup'.
+  Event origin = document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/examples/examples/example_pizza/pizza.vxml'
+  Handler location = platform default handler
+
+2026-Oct-23 15:00:21.084 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpretation finished.
+  value returned by <exit> = 
+{
+}
+  value returned by <disconnect> = 
+undefined
+
+2026-Oct-23 15:00:21.123 INFO {N/A} <N/A> [OptimComponents Core]
+Deleted session with ID 'vxmlDialog_0'.
+

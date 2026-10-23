@@ -1,0 +1,148 @@
+Created from template: |append [ot_log-%y-%m-%d_%H_%M_%s.log] 
+Number of records: 100000
+Lifetime: unlimited
+Log format:
+date time severity {session id} <category> [source]
+label: message
+===================================================
+
+2026-Oct-23 15:00:23.686 ALW {N/A} <N/A> [OptimComponents Core]
+========== Log start ==========
+
+2026-Oct-23 15:00:23.686 INFO {N/A} <N/A> [OptimComponents Core]
+Created session with ID 'vxmlDialog_0'.
+
+2026-Oct-23 15:00:23.749 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Preparing document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/examples/examples/example_pizza/pizza.vxml'.
+
+2026-Oct-23 15:00:23.756 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Preparing of document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/examples/examples/example_pizza/pizza.vxml' completed.
+  result = success
+
+2026-Oct-23 15:00:23.756 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/examples/examples/example_pizza/pizza.vxml'
+
+2026-Oct-23 15:00:23.756 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <form> with id 'start'; line 20; column 1.
+
+2026-Oct-23 15:00:23.767 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <initial> with name 'mixed'; line 42; column 3.
+
+2026-Oct-23 15:00:23.767 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2026-Oct-23 15:00:31.238 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2026-Oct-23 15:00:31.242 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+The following input was collected:
+  utterance = small one please
+  confidence = 1
+  mode = voice
+
+2026-Oct-23 15:00:31.242 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 60; column 3.
+
+2026-Oct-23 15:00:31.242 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 73; column 5.
+
+2026-Oct-23 15:00:31.242 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 92; column 5.
+
+2026-Oct-23 15:00:31.242 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 97; column 3.
+
+2026-Oct-23 15:00:31.242 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 130; column 3.
+
+2026-Oct-23 15:00:31.246 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <field> with name 'pizzatopping'; line 105; column 3.
+
+2026-Oct-23 15:00:31.246 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2026-Oct-23 15:00:39.260 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+An event 'noinput' was added to the event queue
+
+2026-Oct-23 15:00:39.260 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2026-Oct-23 15:00:39.262 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Processing event 'noinput'.
+  Event origin = document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/examples/examples/example_pizza/pizza.vxml'; line 105
+  Handler location = platform default handler
+
+2026-Oct-23 15:00:39.262 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <field> with name 'pizzatopping'; line 105; column 3.
+
+2026-Oct-23 15:00:39.262 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2026-Oct-23 15:00:47.263 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+An event 'noinput' was added to the event queue
+
+2026-Oct-23 15:00:47.263 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2026-Oct-23 15:00:47.263 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Processing event 'noinput'.
+  Event origin = document 'file:/C:/Users/hml4654a/Documents/5A-DOHM/examples/examples/example_pizza/pizza.vxml'; line 105
+  Handler location = platform default handler
+
+2026-Oct-23 15:00:47.263 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <field> with name 'pizzatopping'; line 105; column 3.
+
+2026-Oct-23 15:00:47.266 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2026-Oct-23 15:00:57.001 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2026-Oct-23 15:00:57.001 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+The following input was collected:
+  utterance = cheese
+  confidence = 1
+  mode = voice
+
+2026-Oct-23 15:00:57.001 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 60; column 3.
+
+2026-Oct-23 15:00:57.001 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 97; column 3.
+
+2026-Oct-23 15:00:57.001 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 118; column 5.
+
+2026-Oct-23 15:00:57.001 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 130; column 3.
+
+2026-Oct-23 15:00:57.001 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <field> with name 'drink'; line 136; column 3.
+
+2026-Oct-23 15:00:57.007 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2026-Oct-23 15:01:04.202 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2026-Oct-23 15:01:04.202 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+The following input was collected:
+  utterance = coke
+  confidence = 1
+  mode = voice
+
+2026-Oct-23 15:01:04.202 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 145; column 5.
+
+2026-Oct-23 15:01:04.202 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <block>; line 154; column 3.
+
+2026-Oct-23 15:01:04.202 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpretation finished.
+  value returned by <exit> = undefined
+  value returned by <disconnect> = 
+undefined
+
+2026-Oct-23 15:01:04.329 INFO {N/A} <N/A> [OptimComponents Core]
+Deleted session with ID 'vxmlDialog_0'.
+
